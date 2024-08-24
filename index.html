@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="side-cart" id="cart">
+        <i class='bx bx-window-close' onclick="hideCart()"></i>
+        <div class="display-products" id="display-products">
+
+        </div>
+        <div class="total-price" id="totalPrice"></div>
+    </div>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/watch-dogs-2.svg" alt="">
+                </div>
+                <div class="navigations">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Login">Login</a></li>
+                    </ul>
+                    <i class='bx bxs-cart-alt cart' onclick="popCart()"></i>
+                    <i class='bx bx-menu-alt-right menu' ></i>
+                </div>
+            </div>
+
+
+
+        
+            <div class="header image-preview">
+                <button>Shop Tomorrow</button>
+            </div>
+
+
+
+
+
+
+
+
+
+        
+        
+            <div class="sneakers">
+                <div class="header-title">
+                    <h1 class="big-title">SNEAKERS</h1>
+                    <h1 class="small-title">SNEAKERS</h1> 
+                </div>
+                <div class="products">
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/a.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Hip-hop sneakers
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$69.99</h2>
+                                <button onclick="addToCart('Hip-hop sneakers', 69.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/b.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Simple sneakers
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$49.99</h2>
+                                <button onclick="addToCart('Simple Sneakers', 49.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/c.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                MJ. sneakers
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$29.99</h2>
+                                <button onclick="addToCart('MJ. sneakers', 29.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+            <div class="runnings">
+                <div class="header-title">
+                    <h1 class="big-title">RUNNINGS</h1>
+                    <h1 class="small-title">RUNNINGS</h1> 
+                </div>
+                <div class="products">
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/d.ewbp.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Addidas running shoes
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$24.99</h2>
+                                <button onclick="addToCart('Addidas running shoes', 24.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/e.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Nike gym shoes
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$36.98</h2>
+                                <button onclick="addToCart('Nike gym shoes', 36.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/f.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                puma football shoes
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$42.99</h2>
+                                <button onclick="addToCart('puma football shoes', 42.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="sandals">
+                <div class="header-title">
+                    <h1 class="big-title">SANDALS</h1>
+                    <h1 class="small-title">SANDALS</h1> 
+                </div>
+                <div class="products">
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/g.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Tennis Sandal
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$9.99</h2>
+                                <button onclick="addToCart('Tennis Sandal', 9.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/h.avif" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Golf sandal
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$14.99</h2>
+                                <button onclick="addToCart('Golf Sandal', 14.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="img-preview">
+                            <img src="./images/i.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h2 class="title">
+                                Polo Sandal
+                            </h2>
+                            <div class="price-cart">
+                                
+                                <h2>$12.99</h2>
+                                <button onclick="addToCart('Polo Sandal', 12.99)">+ Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./script/script.js"></script>
+</html>
